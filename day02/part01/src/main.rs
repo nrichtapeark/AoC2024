@@ -39,19 +39,19 @@ fn main() -> std::io::Result<()> {
 
             if a == b {
                 is_safe = false;
-                continue;
+                break;
             } else if a < b && direction == Direction::Decreasing {
                 is_safe = false;
-                continue;
+                break;
             } else if a > b && direction == Direction::Increasing {
                 is_safe = false;
-                continue;
+                break;
             }
 
             let diff = (a - b).abs();
             if diff > 3 {
                 is_safe = false;
-                continue;
+                break;
             }
 
         }
