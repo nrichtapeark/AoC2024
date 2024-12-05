@@ -19,16 +19,18 @@ def main() -> None:
     languages = [
         'python',
         'perl',
-        'ruby',
-        'java',
+        'nim',
+        'zig',
         'scala',
         'c',
         'c++',
         'go',
         'rust',
-        'javascript',
+        'dart',
         'c#',
+        'swift',
         'lua',
+        'java',
     ]
 
     for i in range(args.day):
